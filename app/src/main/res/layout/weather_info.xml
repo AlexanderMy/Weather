@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_weather_info"
+    android:orientation="vertical"
+    android:background="@drawable/card"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        style="@style/weather_info_text_style"
+        android:textSize="25sp" />
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:padding="10dp"
+            android:id="@+id/iv_weather_ic"
+            android:layout_gravity="center"
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:scaleType="fitCenter"/>
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            style="@style/weather_info_text_style"
+            android:id="@+id/tv_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    <TableLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:divider="@color/divider" >
+        <TableRow>
+            <TextView
+                style="@style/weather_info_text_style"
+                android:text="@string/title_wind"/>
+            <TextView
+                style="@style/weather_info_text_style"
+                android:id="@+id/tv_wind" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="@string/title_humidity"
+                style="@style/weather_info_text_style"/>
+            <TextView
+                style="@style/weather_info_text_style"
+                android:id="@+id/tv_humidity" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="@string/title_upd_date"
+                style="@style/weather_info_text_style"/>
+            <TextView
+                style="@style/weather_info_text_style"
+                android:id="@+id/tv_upd_date" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

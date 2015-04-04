@@ -1,4 +1,18 @@
 <resources>
     <string name="app_name">Weather</string>
     <string name="title_activity_maps">Map</string>
+    <string name="search_hint">City</string>
+    <string name="search_title">Search</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!-- weather info strings -->
+    <string name="title_wind">Wind</string>
+    <string name="title_humidity">Humidity</string>
+    <string name="title_upd_date">get at</string>
+    <string name="title_cloudiness">Cloudiness</string>
+    <string name="title_pressure">Pressure</string>
+
+    <string name="title_rain">Rain</string>
+    <string name="title_sunrise">Sunrise</string>
+    <string name="title_sunset">Sunset</string>
 </resources>
